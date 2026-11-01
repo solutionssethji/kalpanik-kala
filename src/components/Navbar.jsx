@@ -128,7 +128,7 @@ export default function Navbar({ lang, setLang, t }) {
             href={CONFIG.instagramUrl} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="btn-insta-sethji"
+            className="btn-insta-sethji nav-hide-sm"
             style={{ padding: '8px 16px', fontSize: '13px' }}
           >
             <InstagramIcon size={15} />
@@ -140,7 +140,7 @@ export default function Navbar({ lang, setLang, t }) {
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn-wa-sethji"
-            style={{ padding: '8px 16px', fontSize: '13px' }}
+            style={{ padding: '8px 14px', fontSize: '13px' }}
           >
             <MessageCircle size={15} />
             <span>WhatsApp</span>

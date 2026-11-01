@@ -249,3 +249,32 @@ h1, h2, h3, h4, h5, h6 {
   color: #fda4af;
   margin-bottom: 20px;
 }
+
+/* Mobile Responsive Optimization Rules */
+@media (max-width: 860px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+  
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  header nav {
+    display: none !important;
+  }
+
+  .btn-insta-sethji.nav-hide-sm {
+    display: none !important;
+  }
+
+  .portfolio-grid-responsive {
+    grid-template-columns: 1fr !important;
+  }
+
+  .services-grid-responsive {
+    grid-template-columns: 1fr !important;
+  }
+}
