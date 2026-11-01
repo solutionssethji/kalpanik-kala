@@ -1,0 +1,251 @@
+:root {
+  /* Art Direction: Warm Artisanal Luxury Boutique & Handcrafted Studio */
+  --color-bg: #0c080b;
+  --color-bg-secondary: #140d12;
+  --color-bg-card: rgba(26, 17, 24, 0.75);
+  --color-bg-card-hover: rgba(38, 24, 34, 0.9);
+  --color-surface-translucent: rgba(22, 14, 20, 0.85);
+  
+  --color-text: #fff5f7;
+  --color-text-muted: #e2cad4;
+  --color-text-dim: #9e818f;
+  
+  /* Artisanal Warm Palette */
+  --color-gold: #f59e0b;
+  --color-gold-light: #fde68a;
+  --color-rose: #f43f5e;
+  --color-rose-light: #fda4af;
+  --color-terracotta: #fb7185;
+  --color-emerald: #10b981;
+  --color-wa: #25D366;
+  
+  --color-border: rgba(244, 63, 94, 0.16);
+  --color-border-hover: rgba(245, 158, 11, 0.45);
+  --color-border-glow: rgba(244, 63, 94, 0.35);
+
+  --gradient-gold: linear-gradient(135deg, #fde68a 0%, #fbbf24 50%, #d97706 100%);
+  --gradient-rose-gold: linear-gradient(135deg, #f43f5e 0%, #e11d48 40%, #fbbf24 100%);
+  --gradient-insta: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  --gradient-text: linear-gradient(135deg, #ffffff 20%, #ffe4e6 60%, #fed7aa 100%);
+  --gradient-accent-text: linear-gradient(135deg, #fecdd3 0%, #fda4af 40%, #fde68a 100%);
+  --gradient-card: linear-gradient(180deg, rgba(29, 18, 26, 0.82) 0%, rgba(18, 11, 16, 0.95) 100%);
+
+  --font-heading: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-hindi: 'Rozha One', 'Playfair Display', serif;
+
+  --radius-xs: 6px;
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-full: 9999px;
+
+  --shadow-card: 0 16px 36px -10px rgba(0, 0, 0, 0.65), 0 0 1px 1px rgba(244, 63, 94, 0.12);
+  --shadow-card-hover: 0 24px 50px -10px rgba(244, 63, 94, 0.22), 0 0 30px rgba(245, 158, 11, 0.2);
+  --shadow-glow: 0 0 35px rgba(244, 63, 94, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #1f293d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Background Ambient Glows */
+.ambient-glow-rose {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(244, 63, 94, 0.14) 0%, rgba(7, 9, 14, 0) 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ambient-glow-gold {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.12) 0%, rgba(7, 9, 14, 0) 70%);
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Gradient Texts */
+.gradient-text {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-accent {
+  background: var(--gradient-accent-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-gold-text {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Sethji-Grade Glass Card */
+.sethji-card {
+  background: var(--gradient-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sethji-card:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-4px);
+}
+
+/* Buttons */
+.btn-primary-sethji {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  background: var(--gradient-rose-gold);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(244, 63, 94, 0.35);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.btn-primary-sethji:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(244, 63, 94, 0.5);
+}
+
+.btn-wa-sethji {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  background: #25D366;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.btn-wa-sethji:hover {
+  background: #20bd5a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+}
+
+.btn-insta-sethji {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  background: var(--gradient-insta);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(220, 39, 67, 0.3);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.btn-insta-sethji:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(220, 39, 67, 0.5);
+}
+
+.btn-outline-sethji {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-outline-sethji:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Badge pill */
+.sethji-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(244, 63, 94, 0.1);
+  border: 1px solid rgba(244, 63, 94, 0.25);
+  color: #fda4af;
+  margin-bottom: 20px;
+}
