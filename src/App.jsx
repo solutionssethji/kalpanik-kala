@@ -40,9 +40,9 @@ export default function App() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: 'var(--color-bg)', color: 'var(--color-text)' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: 'var(--color-bg)', color: 'var(--color-text)', width: '100%', maxWidth: '100vw', overflowX: 'hidden' }}>
       <Navbar lang={lang} setLang={setLang} t={t} />
-      <main style={{ flex: 1 }}>
+      <main style={{ flex: 1, width: '100%', overflowX: 'hidden' }}>
         <Hero t={t} lang={lang} />
         <Services t={t} onSelectService={handleSelectService} />
         <Portfolio t={t} lang={lang} onInquireProduct={handleInquireProduct} />
