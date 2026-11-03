@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Pooja & Rohan Sharma",
+    "city": "Mumbai, Maharashtra",
+    "category": "embroidery",
+    "productEn": "Wedding Anniversary 8-inch Embroidery Hoop",
+    "productHi": "वेडिंग एनिवर्सरी 8-इंच कस्टमाइज्ड एम्ब्रॉयडरी हूप",
+    "rating": 5,
+    "date": "October 2026",
+    "commentEn": "The detailing on our wedding hoop brought tears of joy! Every single stitch was done with such immense love and precision. The packaging was so safe with bubble wrap and a sweet handmade card. Thank you Muskaan!",
+    "commentHi": "हमारे एनिवर्सरी हूप की फिनिशिंग देखकर आंखें भर आईं! धागों का एक-एक टांका इतने प्यार और बारीकी से बनाया गया है। पैकेजिंग भी बहुत सुरक्षित थी। थैंक यू मुस्कान!",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+    "verified": true
+  },
+  {
+    "id": 2,
+    "name": "Aditya Verma",
+    "city": "Indore, Madhya Pradesh",
+    "category": "portrait",
+    "productEn": "Grandparents Charcoal Portrait Sketch (A3)",
+    "productHi": "दादा-दादी जी का चारकोल पोर्ट्रेट स्केच (A3)",
+    "rating": 5,
+    "date": "October 2026",
+    "commentEn": "Muskaan did 100% justice to my grandparents' old photograph. The realistic shading, facial expressions, and eyes look so alive. My whole family was stunned when we unwrapped the frame.",
+    "commentHi": "मेरी पुरानी और थोड़ी धुंधली फोटो से इतना सजीव और रियलिस्टिक स्केच बना दिया कि पूरा परिवार हैरान रह गया। चारकोल शेडिंग और आंखों की डिटेलिंग वाकई काबिले तारीफ है।",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+    "verified": true
+  },
+  {
+    "id": 3,
+    "name": "Dr. Sneha Agrawal",
+    "city": "Jaipur, Rajasthan",
+    "category": "crochet",
+    "productEn": "Handmade Crochet Lily & Tulip Bouquet",
+    "productHi": "हस्तनिर्मित क्रोशिया लिली व ट्यूलिप फ्लावर बुके",
+    "rating": 5,
+    "date": "September 2026",
+    "commentEn": "Gifted this everlasting crochet bouquet for my sister's clinic inauguration. She placed it right on her reception desk. The best part? These flowers will never fade or wilt. Exceptional craftsmanship!",
+    "commentHi": "मेरी बहन के क्लीनिक उद्घाटन के लिए ये क्रोशिया लिली बुके गिफ्ट किया। ये कभी मुरझाएंगे नहीं और देखने में बेहद खूबसूरत लगते हैं। मुस्कान जी की कारीगरी का कोई जवाब नहीं!",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80",
+    "verified": true
+  },
+  {
+    "id": 4,
+    "name": "Naman & Shreya Jain",
+    "city": "Ahmedabad, Gujarat",
+    "category": "jain",
+    "productEn": "Traditional Jain Papad File & Shagun Envelopes",
+    "productHi": "शाही पारंपरिक जैन पापड़ फाइल व शगुन लिफाफे",
+    "rating": 5,
+    "date": "September 2026",
+    "commentEn": "We ordered the customized Jain Papad file for our brother's wedding ceremony. The golden gota-patti border, velvet cloth, and religious auspicious finishing received compliments from all the guests.",
+    "commentHi": "भाई की शादी के लिए जैन पापड़ फाइल बनवाई थी। गोटा-पट्टी की सजावट और पारंपरिक फिनिशिंग देखकर सभी रिश्तेदारों ने बहुत तारीफ की। समय पर सेफ डिलीवरी मिली।",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+    "verified": true
+  },
+  {
+    "id": 5,
+    "name": "Kavita Mehra",
+    "city": "Delhi NCR",
+    "category": "hampers",
+    "productEn": "Luxury Birthday Surprise Keepsake Hamper",
+    "productHi": "लग्जरी बर्थडे सरप्राइज कीपसेक हैंपर",
+    "rating": 5,
+    "date": "August 2026",
+    "commentEn": "From the handwritten wax-sealed letter to the custom photos and crochet roses, every item in the hamper felt bespoke and thoughtful. 10/10 unboxing experience!",
+    "commentHi": "वैक्स सील लेटर से लेकर कस्टमाइज्ड फोटोज और क्रोशिया गुलाब तक, हैंपर की हर एक चीज बहुत स्पेशल लगी। बेस्ट बर्थडे गिफ्टिंग एक्सपीरियंस!",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
+    "verified": true
+  }
+]
