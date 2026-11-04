@@ -200,6 +200,33 @@ export const translations = {
         "संदेश तैयार हो गया है! अब आपको व्हाट्सएप या इंस्टाग्राम पर रीडायरेक्ट किया जा रहा है...",
       validationError: "कृपया नाम और मोबाइल नंबर अवश्य भरें।",
     },
+    faq: {
+      badge: "आपके सवाल, हमारे जवाब",
+      title: "अक्सर पूछे जाने वाले सवाल (FAQs)",
+      desc: "कस्टमाइजेशन, ऑर्डर टाइमलाइन, पैकेजिंग और ऑल-इंडिया डिलीवरी से जुड़े सभी जरूरी जवाब।",
+      items: [
+        {
+          q: "कस्टमाइज्ड आर्टवर्क तैयार होने में कितना समय लगता है?",
+          a: "सामान्यत: 3 से 7 कार्य दिवस (कार्य की जटिलता और साइज के अनुसार)। यदि आपको किसी खास तारीख (जैसे बर्थडे या एनिवर्सरी) के लिए जल्दी चाहिए, तो आप ऑर्डर करते समय हमें पहले बता सकते हैं।"
+        },
+        {
+          q: "क्या पूरे भारत (Pan-India) में डिलीवरी उपलब्ध है?",
+          a: "हाँ, हम भारत के सभी शहरों और कस्बों में विश्वसनीय कूरियर पार्टनर्स के जरिए 100% सुरक्षित डिलीवरी करते हैं।"
+        },
+        {
+          q: "पैकेजिंग कैसी होती है? क्या फ्रेम या आर्टवर्क टूटने का डर रहता है?",
+          a: "हर एक आर्टवर्क को मल्टी-लेयर बबल रैप, कॉर्नर प्रोटेक्टर्स और मजबूत कार्डबोर्ड बॉक्स में पैक किया जाता है ताकि यह पूरी तरह सुरक्षित पहुंचे। साथ ही हर पार्सल में हमारा सिग्नेचर 'Welcome to my world' थैंक-यू कार्ड शामिल होता है।"
+        },
+        {
+          q: "ऑर्डर कैसे बुक करें और कस्टमाइजेशन कैसे शेयर करें?",
+          a: "आप वेबसाइट पर फॉर्म भरकर या सीधे 'Order via WhatsApp' बटन दबाकर हमें अपनी फोटो, नाम, तारीख या पसंदीदा कोट्स भेज सकते हैं। हम फाइनल काम शुरू करने से पहले आपको प्रिव्यू दिखाते हैं।"
+        },
+        {
+          q: "पेमेंट कैसे की जा सकती है?",
+          a: "हम UPI (GPay, PhonePe, Paytm) और बैंक ट्रांसफर स्वीकार करते हैं। ऑर्डर कन्फर्मेशन के समय थोड़ा एडवांस और काम पूरा होने के बाद फाइनल प्रिव्यू देखकर बाकी पेमेंट की जा सकती है।"
+        }
+      ]
+    },
     footer: {
       aboutText:
         "काल्पनिक कला (@kalpanik_kala_22) — जहां हर धागे में प्यार और कल्पना का रंग पिरोया जाता है। खास मौकों के लिए अनोखे हस्तनिर्मित उपहार।",
@@ -407,6 +434,33 @@ export const translations = {
       successMsg:
         "Inquiry generated! Redirecting you now to WhatsApp / Instagram...",
       validationError: "Please provide both your name and phone number.",
+    },
+    faq: {
+      badge: "Got Questions? We Have Answers",
+      title: "Frequently Asked Questions",
+      desc: "Everything you need to know about bespoke customization, crafting timeline, packaging & pan-India delivery.",
+      items: [
+        {
+          q: "How long does it take to create a custom artwork?",
+          a: "Typically 3 to 7 working days depending on the size and complexity. If you have an urgent deadline (such as an anniversary or birthday), let us know while inquiring and we will prioritize it."
+        },
+        {
+          q: "Do you deliver all over India?",
+          a: "Yes! We ship across all cities, towns, and pin codes in India using reliable courier partners with door-to-door tracking."
+        },
+        {
+          q: "How is the artwork packaged? Is it safe during transit?",
+          a: "Every artwork is carefully packed with multi-layer bubble wrap, edge protectors, and corrugated outer boxing to ensure 100% safe arrival. Every package also includes our signature keepsake thank-you card."
+        },
+        {
+          q: "How do I place an order and customize my design?",
+          a: "Simply fill out the inquiry form or click 'Order via WhatsApp'. Share your reference photos, names, dates, or color preferences. We will discuss and confirm the design preview before finalizing."
+        },
+        {
+          q: "What payment options are accepted?",
+          a: "We accept UPI (Google Pay, PhonePe, Paytm) and direct bank transfers. A token advance is taken at the time of booking, with the balance upon viewing the finished preview."
+        }
+      ]
     },
     footer: {
       aboutText:

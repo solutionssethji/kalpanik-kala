@@ -72,6 +72,7 @@ export default function Hero({ t, lang }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
+            className="hero-buttons-container"
             style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '14px', marginBottom: '60px' }}
           >
             <a href="#contact" className="btn-primary-sethji" style={{ padding: '14px 28px', fontSize: '15px' }}>

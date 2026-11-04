@@ -11,7 +11,7 @@ const InstagramIcon = ({ size = 16, className = '' }) => (
   </svg>
 );
 
-export default function Footer({ t }) {
+export default function Footer({ t, onOpenAdmin }) {
   return (
     <footer style={{ backgroundColor: '#05070a', borderTop: '1px solid var(--color-border)', padding: '60px 24px 30px', color: 'var(--color-text-dim)', fontSize: '13px' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
@@ -47,6 +47,7 @@ export default function Footer({ t }) {
               <a href="#services" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>{t.nav.services}</a>
               <a href="#portfolio" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>{t.nav.gallery}</a>
               <a href="#whyus" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>{t.nav.about}</a>
+              <a href="#faq" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>FAQs</a>
               <a href="#contact" style={{ color: 'var(--color-text-muted)', textDecoration: 'none' }}>{t.nav.enquiry}</a>
             </div>
           </div>
@@ -77,14 +78,45 @@ export default function Footer({ t }) {
 
         </div>
 
-        <div style={{ borderTop: '1px solid var(--color-border)', paddingTop: '24px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '14px', fontSize: '12.5px' }}>
-          <div>
-            <p style={{ margin: 0, color: 'var(--color-text-dim)' }}>
+        <div className="footer-bottom-bar" style={{ borderTop: '1px solid var(--color-border)', paddingTop: '24px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '14px', fontSize: '12.5px' }}>
+          <div className="footer-bottom-copy" style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+            <p style={{ margin: 0, color: 'var(--color-text-dim)', textAlign: 'center' }}>
               © {new Date().getFullYear()} <strong style={{ color: '#ffffff' }}>{t.brandName}</strong>. All rights reserved.
             </p>
+            {onOpenAdmin && (
+              <button 
+                onClick={onOpenAdmin} 
+                style={{ 
+                  background: 'rgba(244, 63, 94, 0.12)', 
+                  border: '1px solid rgba(244, 63, 94, 0.3)', 
+                  color: '#fda4af', 
+                  cursor: 'pointer', 
+                  padding: '5px 12px',
+                  borderRadius: '8px',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  fontSize: '12px',
+                  fontWeight: 600,
+                  transition: 'all 0.2s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'rgba(244, 63, 94, 0.25)';
+                  e.currentTarget.style.color = '#ffffff';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'rgba(244, 63, 94, 0.12)';
+                  e.currentTarget.style.color = '#fda4af';
+                }}
+                title="Admin Live CMS (PIN: 8815)"
+              >
+                <span>⚙️</span>
+                <span>Admin CMS</span>
+              </button>
+            )}
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+          <div className="footer-bottom-credits" style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
             <span>Crafted with</span>
             <Heart size={14} style={{ color: '#f43f5e', fill: '#f43f5e' }} />
             <span style={{ opacity: 0.4 }}>•</span>
@@ -99,7 +131,7 @@ export default function Footer({ t }) {
                 textDecoration: 'none', 
                 background: 'rgba(245, 158, 11, 0.12)', 
                 border: '1px solid rgba(245, 158, 11, 0.3)', 
-                padding: '3px 10px', 
+                padding: '4px 12px', 
                 borderRadius: '8px',
                 transition: 'all 0.2s ease',
                 display: 'inline-flex',

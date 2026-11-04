@@ -1,10 +1,11 @@
 {
   "isActive": true,
   "expiryDate": "2026-11-11T23:59:59",
-  "badgeEn": "Slots Limited",
-  "badgeHi": "सीमित स्लॉट्स",
-  "textEn": "November Handcrafted Bookings Open: Only 7 Custom Portrait & Hoop Slots Left This Week!",
+  "badgeEn": "Special Offer",
+  "badgeHi": "खास ऑफर",
+  "textEn": "November Handcrafted Bookings Open: Only 7 Custom Portrait & Hoop Slots Left!",
   "textHi": "नवंबर बुकिंग जारी है: इस सप्ताह के लिए केवल 7 कस्टम आर्टवर्क स्लॉट्स शेष हैं!",
   "ctaEn": "Book Your Slot",
   "ctaHi": "स्लॉट बुक करें"
 }
+

@@ -51,6 +51,13 @@
   padding: 0;
 }
 
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
 html, body {
   width: 100%;
   max-width: 100vw;
@@ -119,18 +126,21 @@ h1, h2, h3, h4, h5, h6 {
 .gradient-text {
   background: var(--gradient-text);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-accent {
   background: var(--gradient-accent-text);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-gold-text {
   background: var(--gradient-gold);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -259,6 +269,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 
+/* Instagram link container */
+.insta-link-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8px;
+  width: 100%;
+}
+
 /* Mobile Responsive Optimization Rules */
 @media (max-width: 860px) {
   .hidden-mobile {
@@ -288,12 +309,214 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   section {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
     overflow-x: hidden !important;
   }
 
   .sethji-card {
-    padding: 24px 18px !important;
+    padding: 22px 16px !important;
+  }
+
+  /* Form and Button Mobile adjustments */
+  .contact-form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .insta-link-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 8px !important;
+    margin-left: 0 !important;
+    margin-top: 8px !important;
+  }
+
+  .floating-wa-btn {
+    bottom: 84px !important;
+    right: 18px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 16px !important;
+  }
+
+  .footer-bottom-copy {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  .footer-bottom-credits {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand-tagline {
+    display: none !important;
+  }
+
+  .navbar-handle-pill {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-buttons-container {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .hero-buttons-container a, 
+  .hero-buttons-container button {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .navbar-header {
+    padding: 10px 14px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .navbar-wa-text {
+    display: none !important;
+  }
+  
+  .navbar-wa-btn {
+    padding: 7px 10px !important;
+  }
+}
+
+/* Admin Dashboard Mobile Responsiveness */
+.admin-card-row {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 16px 20px;
+  display: grid;
+  grid-template-columns: 70px 1.5fr 1fr 100px 120px 40px;
+  gap: 16px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .admin-modal-container {
+    padding: 8px !important;
+  }
+  
+  .admin-modal-box {
+    max-height: 94vh !important;
+    border-radius: 16px !important;
+  }
+
+  .admin-modal-header {
+    padding: 12px 16px !important;
+  }
+
+  .admin-modal-body {
+    padding: 12px 14px !important;
+    gap: 14px !important;
+  }
+
+  .admin-action-bar {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+
+  .admin-action-buttons {
+    display: flex !important;
+    width: 100% !important;
+    gap: 8px !important;
+    align-items: stretch !important;
+  }
+
+  .admin-action-buttons button {
+    flex: 1 !important;
+    min-height: 44px !important;
+    height: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px 12px !important;
+    font-size: 13px !important;
+    border-radius: 12px !important;
+    box-sizing: border-box !important;
+  }
+
+  .admin-card-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+    padding: 14px !important;
+    border-radius: 14px !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(244, 63, 94, 0.25) !important;
+  }
+
+  .admin-row-top {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .admin-row-fields {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+    width: 100% !important;
+    align-items: end !important;
+  }
+
+  .admin-row-fields select, 
+  .admin-row-fields input {
+    font-size: 13px !important;
+    padding: 8px 10px !important;
+  }
+
+  .admin-delete-container {
+    grid-column: 1 / -1 !important;
+    display: flex !important;
+    justify-content: flex-end !important;
+    margin-top: 4px !important;
+    border-top: 1px dashed rgba(255, 255, 255, 0.08) !important;
+    padding-top: 8px !important;
+  }
+
+  .admin-add-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  /* Admin Review Cards on mobile */
+  .admin-review-card {
+    padding: 12px 14px !important;
+    gap: 10px !important;
+  }
+
+  .admin-review-info {
+    gap: 10px !important;
+  }
+
+  .admin-review-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+  }
+
+  .admin-review-header span {
+    font-size: 13px !important;
   }
 }
